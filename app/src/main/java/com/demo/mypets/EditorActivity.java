@@ -160,7 +160,7 @@ public class EditorActivity extends AppCompatActivity {
     }
 
     private void setupSpinner(){
-        ArrayAdapter genderSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.array_gender_options, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> genderSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.array_gender_options, android.R.layout.simple_spinner_item);
         genderSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
         mGenderSpinner.setAdapter(genderSpinnerAdapter);
 
@@ -278,7 +278,7 @@ public class EditorActivity extends AppCompatActivity {
                         deleteData("delete", id, picture);
                     }
                 });
-                dialog.setNegativeButton("Cencel", new DialogInterface.OnClickListener() {
+                dialog.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
