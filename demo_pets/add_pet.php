@@ -22,7 +22,7 @@ if ( $key == "insert" ){
 
             if ($picture == null) {
 
-                $finalPath = "/demo_pets/pet_logo.png"; 
+                $finalPath = "/demo_pets/logo.png"; 
                 $result["value"] = "1";
                 $result["message"] = "Success";
     
